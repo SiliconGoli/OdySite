@@ -29,12 +29,22 @@ html * {
   opacity: 1;
 }
 /* edit for changes in headline */
-.cd-headline{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 150px;
-    font-style: italic;
+.cd-headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15vw; /* Adjust the value based on your preference */
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
 }
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 768px) {
+  .cd-headline {
+      font-size: 15vw; /* Adjust the value based on your preference for smaller screens */
+  }
+}
+
 .cd-headline.clip span {
   display: inline-block;
 }
